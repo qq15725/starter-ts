@@ -11,3 +11,19 @@
     <img src="https://img.shields.io/bundlephobia/minzip/pkg-name" alt="Minzip">
   </a>
 </p>
+
+## Try it now!
+
+### GitHub Template
+
+[Create a repo from this template on GitHub](https://github.com/qq15725/starter-ts/generate).
+
+### Clone to local
+
+If you prefer to do it manually with the cleaner git history
+
+```bash
+npx degit qq15725/starter-ts my-ts-lib
+cd my-ts-lib
+pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
+```
