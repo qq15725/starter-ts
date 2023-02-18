@@ -1,7 +1,7 @@
 {
   "name": "starter-ts",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "packageManager": "pnpm@7.26.2",
   "description": "Starter template for TypeScript library",
   "author": "wxm",
