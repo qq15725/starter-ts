@@ -48,8 +48,8 @@
     "lint": "eslint src",
     "test": "vitest --no-threads --no-isolate",
     "build": "vite build && tsc --project tsconfig.build.json",
-    "version": "pnpm conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
-    "release": "bumpp package.json --commit \"release: v%s\" --push --tag"
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
+    "release": "bumpp package.json --commit \"release: v%s\" --push --all --tag"
   },
   "devDependencies": {
     "@qq15725/eslint-config": "^1.1.0",
