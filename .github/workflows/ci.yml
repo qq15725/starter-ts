@@ -26,9 +26,9 @@ jobs:
   test:
     timeout-minutes: 10
     runs-on: ubuntu-latest
-    name: "Build&Test: node-18, ubuntu-latest"
+    name: "👷 Build&Test: node-18, ubuntu-latest"
     steps:
-      - name: Checkout
+      - name: ⤵️ Checkout
         uses: actions/checkout@v3
         with:
           # Assume PRs are less than 50 commits
@@ -43,56 +43,58 @@ jobs:
             .github/**
             !.github/workflows/ci.yml
             **.md
-      - name: Install pnpm
+
+      - name: 🎉 Install pnpm
         if: steps.changed-files.outputs.only_changed != 'true'
         uses: pnpm/action-setup@v2.2.4
 
-      - name: Set node version to 18
+      - name: 🎉 Set node version to 18
         if: steps.changed-files.outputs.only_changed != 'true'
         uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: "pnpm"
 
-      - name: Install deps
+      - name: 🚧 Install deps
         if: steps.changed-files.outputs.only_changed != 'true'
         run: pnpm install
 
-      - name: Build
+      - name: 📦 Build
         if: steps.changed-files.outputs.only_changed != 'true'
         run: pnpm run build
 
-      - name: Test unit
+      - name: 🔀 Test unit
         if: steps.changed-files.outputs.only_changed != 'true'
         run: pnpm run test
 
   lint:
     timeout-minutes: 10
     runs-on: ubuntu-latest
-    name: "Lint: node-18, ubuntu-latest"
+    name: "👷 Lint: node-18, ubuntu-latest"
     steps:
-      - uses: actions/checkout@v3
+      - name: ⤵️ Checkout
+        uses: actions/checkout@v3
 
-      - name: Install pnpm
+      - name: 🎉 Install pnpm
         uses: pnpm/action-setup@v2.2.4
 
-      - name: Set node version to 18
+      - name: 🎉 Set node version to 18
         uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: "pnpm"
 
-      - name: Install deps
+      - name: 🚧 Install deps
         run: pnpm install
 
-      - name: Build
+      - name: 📦 Build
         run: pnpm run build
 
-      - name: Lint
+      - name: 🔀 Lint
         run: pnpm run lint
 
       # From https://github.com/rhysd/actionlint/blob/main/docs/usage.md#use-actionlint-on-github-actions
-      - name: Check workflow files
+      - name: 🔀 Check workflow files
         run: |
           bash <(curl https://raw.githubusercontent.com/rhysd/actionlint/main/scripts/download-actionlint.bash)
           ./actionlint -color -shellcheck=""

@@ -1,4 +1,4 @@
-name: Add GitHub Release Tag
+name: 🚀 Add GitHub Release Tag
 
 on:
   push:
@@ -12,8 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
-      - name: Create Release for Tag
+      - name: 🔀 Create Release for Tag
         id: release_tag
         uses: actions/create-release@v1
         env:
