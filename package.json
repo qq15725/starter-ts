@@ -45,7 +45,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "lint": "eslint .",
+    "lint": "eslint src",
     "test": "vitest --no-threads --no-isolate",
     "build": "vite build && tsc --project tsconfig.build.json",
     "changelog": "pnpm conventional-changelog -p angular -i CHANGELOG.md -s --commit-path . && git add CHANGELOG.md",
