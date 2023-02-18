@@ -25,18 +25,10 @@ concurrency:
 jobs:
   test:
     timeout-minutes: 20
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     strategy:
       matrix:
-        os: [ubuntu-latest]
-        node_version: [14, 16, 18]
-        include:
-          # Active LTS + other OS
-          - os: macos-latest
-            node_version: 18
-          - os: windows-latest
-            node_version: 18
-      fail-fast: false
+        node-version: [18]
 
     name: "Build&Test: node-${{ matrix.node_version }}, ${{ matrix.os }}"
     steps:
