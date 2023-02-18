@@ -24,13 +24,9 @@ concurrency:
 
 jobs:
   test:
-    timeout-minutes: 20
+    timeout-minutes: 10
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [18]
-
-    name: "Build&Test: node-${{ matrix.node_version }}, ${{ matrix.os }}"
+    name: "Build&Test: node-18, ubuntu-latest"
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -51,11 +47,11 @@ jobs:
         if: steps.changed-files.outputs.only_changed != 'true'
         uses: pnpm/action-setup@v2.2.4
 
-      - name: Set node version to ${{ matrix.node_version }}
+      - name: Set node version to 18
         if: steps.changed-files.outputs.only_changed != 'true'
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node_version }}
+          node-version: 18
           cache: "pnpm"
 
       - name: Install deps
