@@ -48,7 +48,7 @@
     "lint": "eslint src",
     "test": "vitest --no-threads --no-isolate",
     "build": "vite build && tsc --project tsconfig.build.json",
-    "version": "pnpm conventional-changelog -p angular -i CHANGELOG.md -s --commit-path . && git add CHANGELOG.md",
+    "version": "pnpm conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
     "release": "bumpp package.json --commit \"release: v%s\" --push --tag"
   },
   "devDependencies": {
