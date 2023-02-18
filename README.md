@@ -1,20 +1,20 @@
-<h1 align="center">pkg-name</h1>
+<h1 align="center">starter-ts</h1>
 
 <p align="center">
-  <a href="https://unpkg.com/pkg-name">
-    <img src="https://img.shields.io/bundlephobia/minzip/pkg-name" alt="Minzip">
+  <a href="https://unpkg.com/starter-ts">
+    <img src="https://img.shields.io/bundlephobia/minzip/starter-ts" alt="Minzip">
   </a>
-  <a href="https://www.npmjs.com/package/pkg-name">
-    <img src="https://img.shields.io/npm/v/pkg-name.svg" alt="Version">
+  <a href="https://www.npmjs.com/package/starter-ts">
+    <img src="https://img.shields.io/npm/v/starter-ts.svg" alt="Version">
   </a>
-  <a href="https://www.npmjs.com/package/pkg-name">
-    <img src="https://img.shields.io/npm/dm/pkg-name" alt="Downloads">
+  <a href="https://www.npmjs.com/package/starter-ts">
+    <img src="https://img.shields.io/npm/dm/starter-ts" alt="Downloads">
   </a>
-  <a href="https://github.com/qq15725/pkg-name/issues">
-    <img src="https://img.shields.io/github/issues/qq15725/pkg-name" alt="Issues">
+  <a href="https://github.com/qq15725/starter-ts/issues">
+    <img src="https://img.shields.io/github/issues/qq15725/starter-ts" alt="Issues">
   </a>
-  <a href="https://github.com/qq15725/pkg-name/blob/master/LICENSE">
-    <img src="https://img.shields.io/npm/l/pkg-name.svg" alt="License">
+  <a href="https://github.com/qq15725/starter-ts/blob/main/LICENSE">
+    <img src="https://img.shields.io/npm/l/starter-ts.svg" alt="License">
   </a>
 </p>
 
