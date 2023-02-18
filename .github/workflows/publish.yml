@@ -16,7 +16,7 @@ jobs:
       - name: 🎉 Install pnpm
         uses: pnpm/action-setup@v2.2.4
 
-      - name: 🎉　Set node version to 16.x
+      - name: 🎉 Set node version to 16.x
         uses: actions/setup-node@v3
         with:
           node-version: 16.x
@@ -26,7 +26,7 @@ jobs:
       - name: 🚧 Install deps
         run: pnpm install
 
-      - name: 📦　Build
+      - name: 📦 Build
         run: pnpm run build
 
       - name: 🔀 Publish package
