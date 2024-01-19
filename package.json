@@ -44,7 +44,7 @@
     "types"
   ],
   "scripts": {
-    "dev": "vite",
+    "dev": "vite docs",
     "lint": "eslint src",
     "test": "vitest",
     "build": "vite build && tsc --project tsconfig.build.json",
